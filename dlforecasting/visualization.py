@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 
 
-def plot_loss(history):
+def plot_loss(history,figsize=(10,5)):
     """
     Plot training loss history.
     """
 
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=figsize)
 
     plt.plot(history)
 
@@ -21,12 +21,12 @@ def plot_loss(history):
     plt.show()
 
 
-def plot_predictions(actual, predicted):
+def plot_predictions(actual, predicted,figsize=(12,5)):
     """
     Plot actual vs predicted values.
     """
 
-    plt.figure(figsize=(12, 5))
+    plt.figure(figsize=figsize)
 
     plt.plot(actual, label='Actual')
 
