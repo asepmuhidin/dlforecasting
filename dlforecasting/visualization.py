@@ -47,13 +47,14 @@ def plot_predictions(actual, predicted):
 
 def plot_future_forecast(
     historical,
-    future
+    future,
+    figsize=(12,5)
 ):
     """
     Plot future forecasting result.
     """
 
-    plt.figure(figsize=(12, 5))
+    plt.figure(figsize)
 
     plt.plot(
         range(len(historical)),
@@ -70,7 +71,9 @@ def plot_future_forecast(
         label='Future Forecast'
     )
 
-    plt.title("Future Forecast")
+    plt.xlabel("Time")
+
+    plt.ylabel("Value")
 
     plt.legend()
 
