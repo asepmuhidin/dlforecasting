@@ -54,7 +54,7 @@ def plot_future_forecast(
     Plot future forecasting result.
     """
 
-    plt.figure(figsize)
+    plt.figure(figsize=figsize)
 
     plt.plot(
         range(len(historical)),
